@@ -1,0 +1,31 @@
+end-to-end predictive maintance and forecasting scalable solution using AWS cloud archieture 
+
+training loop
+1. get data from s3 into repo 
+2. write preprocessing script using dask 
+3. get data into colab
+4. build tensorflow model in colab and save on s3 
+5. build xgboost model save on s3, optimize using hyperopt save in s3
+6. build random forest, optimize using hyperopt save in s3
+7. write infernence function which takes data from s3 and predicts and store data 
+8. dockerize for deployment using mlflow and benotml
+s3 (data) -> lambda -> run ec2(train data) -> lambda run inference -> save in s3 
+
+
+production loop
+
+5 devices upload reading to s3 -> lambda runner to compile to csv -> s3 -> save in postgres --> run lambda infernence -> save in postgres
+
+8. write function learns distribtuion of sensors 
+9. write 5 devices which uploads reading to s3
+10. write lambda function to compile json to csv 
+11. get data from s3 to postgres
+12. get data from postgres and run lambda infernece
+13. save file in database 
+
+BI
+
+s3 --> redshift --> powerbi
+14. get data from s3 to redshift postgres 
+15. create powerbi dashboard and connect with postgres
+16. build dashboard and save file 
