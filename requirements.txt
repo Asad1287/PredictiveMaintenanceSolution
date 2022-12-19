@@ -1,0 +1,9 @@
+boto3
+mlflow
+numpy
+pandas
+tensorflow
+hyperopt
+scikit-learn
+matplotlib
+xgboost

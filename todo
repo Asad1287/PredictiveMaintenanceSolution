@@ -1,8 +1,8 @@
 end-to-end predictive maintance and forecasting scalable solution using AWS cloud archieture 
 
 training loop
-1. get data from s3 into repo 
-2. write preprocessing script using dask 
+1. get data from s3 into repo -- 
+2. write preprocessing script using dask --
 3. get data into colab
 4. build tensorflow model in colab and save on s3 
 5. build xgboost model save on s3, optimize using hyperopt save in s3
